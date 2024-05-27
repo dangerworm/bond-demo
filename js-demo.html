@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>
+    Hello World!
+  </h1>
+  <div id="raffaelsDiv"></div>
+  <div id="container2"></div>
+  <div id="container3"></div>
+  <div id="container4"></div>
+  <div id="container5"></div>
+  <div id="container6"></div>
+  <div id="container7"></div>
+  <div id="container8"></div>
+  <div id="container9"></div>
+</body>
+
+<script lang="js">
+  var firstContainer = document.getElementById('raffaelsDiv');
+  firstContainer.innerHTML = 'Test 1';
+  document.getElementById('container2').innerHTML = 'Test 2';
+  document.getElementById('container3').innerHTML = 'Test 3';
+  document.getElementById('container4').innerHTML = 'Test 4';
+
+  /* Examples of different aspects of JavaScript */
+  // Variables
+  var x = 5;
+  var y = 10;
+  var z = x + y;
+  document.getElementById('raffaelsDiv').innerHTML = z;
+
+  // Arrays
+  var cars = ['Saab', 'Volvo', 'BMW'];
+  document.getElementById('container2').innerHTML = cars[1];
+
+  // Functions
+  function myFunction(p1, p2) {
+    return p1 * p2;
+  }
+  document.getElementById('container3').innerHTML = myFunction(4, 3);
+
+  /* Examples of diffrent aspects of JavaScript */
+  // Events
+  document.getElementById('container4').addEventListener('click', function () {
+    alert('Hello World!');
+  });
+
+  // Strings
+  var txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  document.getElementById('container5').innerHTML = txt.length;
+
+  // Loops
+  var text = '';
+  var i;
+  for (i = 0; i < 5; i++) {
+    text += 'The number is ' + i + '<br>';
+  }
+  document.getElementById('container6').innerHTML = text;
+
+  // Conditions
+  var time = new Date().getHours();
+  var greeting;
+  if (time < 10) {
+    greeting = 'Good morning';
+  } else if (time < 20) {
+    greeting = 'Good day';
+  } else {
+    greeting = 'Good evening';
+  }
+  document.getElementById('container7').innerHTML = greeting;
+</script>
+
+</html>
